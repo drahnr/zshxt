@@ -5,7 +5,7 @@ Summary:        A fork of oh-my-zsh
 
 License:        MIT
 URL:            https://ahoi.io/zshxt
-Source0:        %{name}-%{version}.tar
+Source0:        %{name}.tar.xz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:		noarch
@@ -16,7 +16,7 @@ Requires:		zsh
 A fork of oh-my-zsh which deals with global setup.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}
 
 
 %build
